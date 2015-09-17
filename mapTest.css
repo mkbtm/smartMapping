@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+body{
+	background-color: rgba(120,120,120,1.00);	
+}
+
+
+
+#map {
+	width: 100%;
+	height: 500px;
+}
+
+#map_curssor{
+	position: absolute;
+	/*250/2 - 16 = 109*/
+	top: 109px;
+	left : -webkit-calc(50% - 16px) ;/*safari iOS 7以降*/
+	left : calc(50% - 16px) ;/*Android4.4以降*/
+}
+

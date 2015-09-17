@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: larg;	
+	background-color: rgba(100,180,50,1.00);	
+	color: rgba(255,255,255,1.00);	
+	height : 45px;
+}
+
+
+body{
+	background-color: rgba(120,120,120,1.00);	
+}
+
+
+#main{
+	background-color: rgba(220,250,220,1.00);	
+	//overflow: auto;
+	width:100%;
+}
+
+#footer{
+	clear: left;
+	display:block;
+	font-size: small;	
+	background-color: rgba(100,180,50,1.00);	
+	color: rgba(255,255,255,1.00);	
+	height : 30px;
+	text-align: center;
+	/*margin-top:400px;*/
+	width: 100%;
+	/*position: absolute;  */     /* 絶対位置指定することを定義 */
+	/*top: 480px;       */       /* 絶対位置指定(左0px,下0px) */ 
+}
+
+
+h2{
+	font-size: small;
+	margin-top: 20px;
+}
+
+/*マップしたの座標表示*/
+#position {
+	font-size: small;
+	color:rgba(100,100,100,1.00);	
+}
+
+
+.button{
+	clear : left;
+	/*display: block;*/
+	margin-top: 1px;
+	margin-left:3%;
+	margin-right:3%;
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 80%;
+	/*height: 25px;*/
+	border-radius: 5px;        /* CSS3 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+    border: 2px outset #999; 
+	background-color: rgba(160,200,220,1.00);
+}
+
+/*
+a{
+	display:block;
+}
+*/
+
+#reloadButtonDiv{
+	width:100%;
+	text-align:right;
+	display:block;
+}
+
+#reloadButton{
+	float:left;
+	text-align:right;
+}
+
+
+#area{
+	width:180px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#image {
+	width:250px;
+	margin: 5px auto 5px auto;
+}
+
+/*画像を選択するボタンの装飾*/
+.file {
+	display:inline-block;
+    position:relative;
+    overflow:hidden;
+    border-radius:5px;
+    background:rgba(10,200,220,1.00);
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    line-height:30px;
+    width:180px;
+    cursor:pointer;
+    font-size:1.2em;
+}
+ 
+ 
+.file input[type="file"] {
+	position:absolute;
+    top:0;
+    left:0;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:100%;    
+    cursor:pointer;
+    opacity:0;
+}
+
+
+input#sendButton{
+	margin:10px;
+	/*margin: auto,10px,auto,10px;*/
+	/*padding: 15px 40px;*/
+    font-size: 1.2em;
+    /* 背景色を黒に指定*/
+    background-color: #000;
+    /* 文字色を白に指定*/
+    color: #fff;
+    /* submitボタンのを枠を非表示にする*/
+    border-style: none;
+    
+    border-radius: 2px;        /* CSS3 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+    border: 2px outset #999; 
+	background-color: rgba(160,200,220,1.00);
+}
+
+
+#map {
+	width: 100%;
+	height: 250px;
+	/*border: solid 1px #ccc;*/
+}
+
+#map_curssor{
+	position: absolute;
+	/*250/2 - 16 = 109*/
+	top: 109px;
+	left : -webkit-calc(50% - 16px) ;/*safari iOS 7以降*/
+	left : calc(50% - 16px) ;/*Android4.4以降*/
+}
+
+#input_form{
+	clear:left;
+	width:100%;
+	/*background-color: rgba(200,255,200,1.00);	*/
+	/*background-color: rgba(160,200,220,1.00);*/
+}
+
+.input_marker{
+	float: left;
+	/*display:block;*/
+	width: 6%;
+	height: 45px;
+	background-color: rgba(20,200,20,1.00);	
+	border:none;
+	margin: 12px 0px;
+	/*margin-top:12px;
+	margin-bottom:12px;
+	margin-left:0px;
+	margin-right:0px;*/
+	font-size: 1.2em;
+}
+
+.input_marker2{
+	float: left;
+	width: 6%;
+	height: 90px;
+	background-color: rgba(20,200,20,1.00);	
+	border:none;
+	margin: 12px 0px;
+	font-size: 1.2em;
+}
+
+
+
+.clearLeft {
+	clear: left;
+}
+
+input{
+	font-size: 1.2em;
+	width:90%;
+	height:45px;
+	
+	margin-top:12px;
+	margin-bottom:12px;
+	margin-left:0%;
+	margin-right:2%;
+	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	border:none;
+}
+
+textarea{
+	font-size: 1.2em;
+	width:90%;
+	height:90px;
+	
+	margin-top:12px;
+	margin-bottom:12px;
+	margin-left:0%;
+	margin-right:2%;
+	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	border:none;
+}
+
+#area{
+	claer:left;
+}
+
+/*画像処理中の表示*/
+#img_process {
+	display: none;
+	background-color: rgba(160,200,220,1.00);
+}
+
+/*ボタン*/
+button {
+    /* 文字サイズを1.4emに指定 */
+    font-size: 1.4em;
+    /* 文字の太さをboldに指定 */
+    font-weight: bold;
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 10px 30px;
+    /* 背景色を濃い青色に指定 */
+    background-color: rgba(10,200,220,1.00);
+    /* 文字色を白色に指定 */
+    color: #fff;
+    /* ボーダーをなくす */
+    border-style: none;
+    
+     /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    display:block;
+    
+    margin-top:30px;
+    margin-bottom:60px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+button:hover {
+    /* 背景色を明るい青色に指定 */
+    background-color: rgba(10,200,20,1.00);
+    /* 文字色を白色に指定 */
+    color: #fff;
+}
+
+
+select{
+	color: #B3B3B3;
+	background-color: rgba(255,255,255,1.00);
+	font-size: 1.2em;
+    /*padding: 12px 50px 12px 12px;*/
+	width:90%;
+	height:45px;
+	
+	margin-top:12px;
+	margin-bottom:12px;
+	margin-left:0%;
+	margin-right:2%;
+	
+    border: 0px solid #B3B3B3;
+	border-radius: 0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*text-indent: .01px;*/
+    /*text-overflow: "";*/
+    /*background: #FFF url(select_arrow.jpg) no-repeat right;*/
+}
