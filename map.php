@@ -2,9 +2,9 @@
 
 /*
 smartMapping map.php 
- * Copyright (c) 2015 makabe, tomo, mkbtm1968@gmail.com, http://mkbtm.jp/
- * Licensed under the MPL License [http://www.nihilogic.dk/licenses/mpl-license.txt]
- */
+*Copyright (c) 2015 makabe, tomo, mkbtm1968@gmail.com, http://mkbtm.jp/
+*Licensed under the MIT license
+*/
 
 date_default_timezone_set('Asia/Tokyo');//タイムゾーンの設定
 
